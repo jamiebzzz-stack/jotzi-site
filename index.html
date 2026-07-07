@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jotzi — Reminders that stick</title>
+  <meta name="description" content="Jotzi is a gentle reminder companion from Ocoee Studios LLC with Smart Loops, private Vault, Watch spirits, and health-aware reminder concepts." />
+  <style>
+    :root {
+      --bg: #071424;
+      --card: #132238;
+      --card2: #1A2B44;
+      --gold: #F6C06E;
+      --text: #FFF7EA;
+      --muted: #C8D4E3;
+      --line: #3A516D;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(246,192,110,.18), transparent 32rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .wrap {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 32px;
+      align-items: center;
+      min-height: 72vh;
+    }
+
+    .badge {
+      color: var(--gold);
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: .92;
+      letter-spacing: -0.07em;
+      margin: 12px 0 18px;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: clamp(18px, 2.4vw, 24px);
+      max-width: 680px;
+      font-weight: 650;
+    }
+
+    .card {
+      background: rgba(19,34,56,.86);
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      padding: 24px;
+      box-shadow: 0 0 48px rgba(246,192,110,.12);
+    }
+
+    .app-icon {
+      width: min(280px, 70vw);
+      aspect-ratio: 1;
+      border-radius: 64px;
+      display: block;
+      margin: 0 auto;
+      object-fit: cover;
+      border: 1px solid var(--gold);
+      box-shadow: 0 0 42px rgba(246,192,110,.28);
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 900;
+      border: 1px solid var(--gold);
+    }
+
+    .button.primary {
+      background: var(--gold);
+      color: #071424;
+    }
+
+    .button.secondary {
+      color: var(--gold);
+      background: rgba(246,192,110,.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .feature {
+      background: rgba(26,43,68,.78);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 18px;
+    }
+
+    .feature h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      margin: 0;
+      font-weight: 650;
+    }
+
+    footer {
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      margin-top: 42px;
+      padding-top: 22px;
+      font-size: 14px;
+    }
+
+    footer a { color: var(--gold); }
+
+    @media (max-width: 780px) {
+      .hero, .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="badge">Ocoee Studios LLC</div>
+        <h1>jotzi</h1>
+        <p class="lead">
+          Reminders that stick. Jotzi is a gentle companion for Smart Loops, tiny sparks,
+          private Vault notes, and future Apple Watch nudges.
+        </p>
+
+        <div class="cta-row">
+          <a class="button primary" href="#features">Explore features</a>
+          <a class="button secondary" href="./privacy.html">Privacy</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="app-icon" src="./jotzi-icon.png" alt="Jotzi app icon" />
+      </div>
+    </section>
+
+    <section id="features" class="grid">
+      <div class="feature">
+        <h2>Smart Loops</h2>
+        <p>Jotzi keeps unfinished things gently coming back until they are done.</p>
+      </div>
+
+      <div class="feature">
+        <h2>Private Vault</h2>
+        <p>A locked place for sensitive reminders, private sparks, and personal notes.</p>
+      </div>
+
+      <div class="feature">
+        <h2>Watch Spirits</h2>
+        <p>Future Apple Watch support can turn Jotzi spirits into soft wrist nudges.</p>
+      </div>
+
+      <div class="feature">
+        <h2>Reminder Recipes</h2>
+        <p>Start routines like Morning Reset, Health Routine, Errand Loop, and more.</p>
+      </div>
+
+      <div class="feature">
+        <h2>Health-aware concepts</h2>
+        <p>Future HealthKit signals can help Jotzi soften reminders around sleep and recovery.</p>
+      </div>
+
+      <div class="feature">
+        <h2>Sparks</h2>
+        <p>Catch tiny ideas before they disappear, then turn them into loops later.</p>
+      </div>
+    </section>
+
+    <footer>
+      <strong>Jotzi</strong> is built and published by Ocoee Studios LLC.
+      <br />
+      <a href="./privacy.html">Privacy Policy</a>
+    </footer>
+  </main>
+</body>
+</html>
